@@ -53,13 +53,16 @@
         }
         .header_bottom{
             background: #ffc;
+            text-align: center;
         }
         .header_bottom ul{
             overflow: hidden;
+            background: #ccc;
+            display: inline-block;
+            vertical-align: top;
         }
         .header_bottom ul li{
             float: left;
-            background: #ccc;
             line-height: 50px;
             padding: 0 20px;
         }
@@ -72,32 +75,71 @@
             margin-top: 10px;
             padding: 10px;
             background: #ccc;
-            overflow: hidden;
         }
-        .top_box{
+        .top_area .top_box{
             background: #fff;
-            height: 200px;
+            height: 100px;
+            margin-bottom: 10px;
         }
 
-        .bottom_box{
-            float: left;
+        .top_area .bottom_box{
+            padding: 10px;
+            background: #fff;
+            overflow: hidden;
         }
         .bottom_box .left{
             overflow: hidden;
+            width: calc(100% - 160px);
+            float: left;
         }
         .bottom_box .left li{
             float: left;
             height: 100px;
-            background: #fff;
+            background: #fcc;
             width: calc((100% - 20px) / 3);
-            margin-top: 10px;
             margin-right: 10px;
         }
         .bottom_box .left li:nth-child(3n){
             margin-right: 0;
         }
+
+        .bottom_box .left li:nth-child(n+4){
+            margin-top: 10px;
+        }
         .top_area .right{
-            width: 100px;
+            float: right;
+            width: 150px;
+            height: 210px;
+            background: #fcc;
+        }
+
+        .bottom_area{
+            margin: 10px 0;
+            padding: 10px;
+            background: #fcc;
+        }
+        .bottom_area ul li+li{
+            margin-top: 10px;
+        }
+        .bottom_area ul li a{
+            display: block;
+            overflow: hidden;
+        }
+        .bottom_area ul li img{
+            float: left;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+        }
+        .bottom_area ul li p{
+            float: right;
+            height: 150px;
+            width: calc(100% - 160px);
+            background: #fff;
+        }
+        footer{
+            height: 100px;
+            background: #ccc;
         }
 
 
@@ -169,6 +211,7 @@
             </ul>
         </div>
     </main>
+    <footer>footer</footer>
 </body>
 
 </html>
